@@ -151,7 +151,7 @@ Nᴀᴍᴇ - {}"""
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     SHORTLINK_INFO = """
-<b>──────「<a href=https://t.me/Filmy_Fundas> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」──────
+<b>──────「<a href=https://t.me/> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」──────
 
 Yᴏᴜ ᴄᴀɴ Eᴀʀɴ Mᴏɴᴇʏ Fʀᴏᴍ Tʜɪs Bᴏᴛ Uɴᴛɪʟ ᴛʜɪs ʙᴏᴛ ɪs ᴀʟɪᴠᴇ.
 
@@ -161,7 +161,7 @@ sᴛᴇᴘ 𝟷 : ʏᴏᴜ ᴍᴜsᴛ ʜᴀᴠᴇ ᴀᴛʟᴇᴀsᴛ ᴏɴᴇ ɢ
 
 sᴛᴇᴘ 𝟸 : ᴍᴀᴋᴇ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ Aɴʏ <a href=https://Omnifly.in.net>Sʜᴏʀᴛᴇɴᴇʀ Wᴇʙsɪᴛᴇ</a>.
 
-sᴛᴇᴘ 𝟹 : ꜰᴏʟʟᴏᴡ ᴛʜᴇsᴇ <a href=https://t.me/Filmy_Fundas> ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ </a>Tᴏ ᴄᴏɴɴᴇᴄᴛ sʜᴏʀᴛᴇɴᴇʀ.
+sᴛᴇᴘ 𝟹 : ꜰᴏʟʟᴏᴡ ᴛʜᴇsᴇ <a href=https://t.me/> ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ </a>Tᴏ ᴄᴏɴɴᴇᴄᴛ sʜᴏʀᴛᴇɴᴇʀ.
 
 ➣ Yᴏᴜ ᴄᴀɴ ᴄᴏɴɴᴇᴄᴛ ᴀs ᴍᴀɴʏ ɢʀᴏᴜᴘ ʏᴏᴜ ʜᴀᴠᴇ.
 
@@ -203,7 +203,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-@Filmy_Fundas {file_name}
+@New_Moviee_hindi {file_name}
 
 ❍ sɪᴢᴇ : {file_size}"""
 
