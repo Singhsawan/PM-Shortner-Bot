@@ -204,10 +204,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
     CAPTION = """
  {file_name}
 
-⚙️ sɪᴢᴇ : {file_size}
-
-ᴅɪʀᴇᴄᴛ ꜰɪʟᴇ ɢʀᴏᴜᴘ ᴀᴠᴀɪʟᴀʙʟᴇ🔥
-🤵 ᴄᴏɴᴛᴀᴄᴛ @ᴊ_ꜱʜʀᴇᴇ_ʀᴀᴍ"""
+⚙️ sɪᴢᴇ : {file_size}"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
