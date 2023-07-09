@@ -291,7 +291,7 @@ async def start(client, message):
                 ]
             )
         )
-        await asyncio.sleep(1200)
+        await asyncio.sleep(600)
         await k.edit("<b>Your message is successfully deleted!!!</b>")
         return
         
@@ -342,7 +342,9 @@ async def start(client, message):
                 )
             )
             filesarr.append(msg)
-        
+        await asyncio.sleep(600)
+        for x in filesarr:
+            await x.delete()
         await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return    
         
@@ -367,7 +369,7 @@ async def start(client, message):
                     ]
                 )
             )
-            await asyncio.sleep(1200)
+            await asyncio.sleep(600)
             await k.edit("<b>Your message is successfully deleted!!!</b>")
             return
     user = message.from_user.id
