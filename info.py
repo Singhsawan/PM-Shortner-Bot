@@ -43,16 +43,16 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://telegrammange:sawan09@cluster0.upfv2ff.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b2488d7cb39a3bda4f66123a3f67cb773af054fb')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'Ziplinker.net')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'b2488d7cb39a3bda4f66123a3f67cb773af054fb')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omnifly.in.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', '16391e00aebfad25b243edf7e0034eea4fad7325')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'omnifly.in.net')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '16391e00aebfad25b243edf7e0034eea4fad7325')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
