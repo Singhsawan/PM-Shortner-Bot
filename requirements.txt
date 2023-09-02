@@ -35,4 +35,4 @@ aiohttp<=3.11.2
 python-math
 Pillow
 speedtest-cli
-
+TGxIRFAN
