@@ -1,15 +1,12 @@
-pyrogram>=2.0.30
-tgcrypto
-pymongo[srv]==3.12.3
-motor==2.5.1
-marshmallow==3.14.1
-umongo==3.0.1
-requests
-bs4
-git+https://github.com/Joelkb/cinemagoer
-shortzy
-datetime
-pytz
-Flask==2.2.2
-gunicorn==20.1.0
-aiohttp==3.8.1
+FROM python:3.10.8-slim-buster
+
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
+
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /ben-url-filter-bot
+WORKDIR /ben-url-filter-bot
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
