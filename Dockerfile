@@ -10,3 +10,6 @@ RUN mkdir /ben-url-filter-bot
 WORKDIR /ben-url-filter-bot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
+
+Collab TGxIRFAN
+
