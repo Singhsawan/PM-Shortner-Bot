@@ -1,4 +1,4 @@
-class script(object):
+8class script(object):
     START_TXT = """<b>ʜᴇʟᴏ {}
     
 ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ
@@ -201,10 +201,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
- {file_name}
-
-⚙️ sɪᴢᴇ : {file_size}"""
+    CAPTION = """<a href="https://t.me/The_Happy_Hour_Hindi"><b>{file_name}</b></a>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title: <a href={url}>{title}</a>
