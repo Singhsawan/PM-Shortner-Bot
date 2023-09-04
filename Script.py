@@ -201,7 +201,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<a href="https://t.me/The_Happy_Hour_Hindi"><b>{file_name}</b></a>"""
+    CAPTION = """<b>{file_name}</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title: <a href={url}>{title}</a>
