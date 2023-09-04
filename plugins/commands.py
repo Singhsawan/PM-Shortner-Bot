@@ -334,7 +334,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/The_Happy_Hours')
+                      InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/The_Happy_Hours')
                    ]
                     ]
                 )
@@ -445,10 +445,8 @@ async def start(client, message):
             [
              [
               InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-              InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ", url="https://t.me/Happy_Hour_Friends")
-             ]
+              InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/The_Happy_Hours')
+           ]
             ]
         )
     )
