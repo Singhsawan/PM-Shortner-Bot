@@ -346,7 +346,7 @@ async def start(client, message):
     elif data.startswith("files"):
         user = message.from_user.id
         if temp.SHORT.get(user)==None:
-            await message.reply_text(text="<b>Please Search Again in Group</b>")
+            await message.reply_text(text="<b>वो मैसेज बहुत पुराना था....🥱\nअपने लिए वापस मूवी का नाम लिखे....❤️</b>")
         else:
             chat_id = temp.SHORT.get(user)
         settings = await get_settings(chat_id)
