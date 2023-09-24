@@ -4,7 +4,7 @@ class script(object):
 ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ
 ɪ ᴀᴍ ᴘᴍ sʜᴏʀᴛɴᴇʀ-ʟɪɴᴋ ʙᴏᴛ
 
-ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ : <a href="https://t.me/master_jiraya">🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮</a></b>"""
+ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ : <a href="https://t.me/The_Happy_Hours">🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮</a></b>"""
 
     
     HELP_TXT = """<b>Hᴇʏ {}
