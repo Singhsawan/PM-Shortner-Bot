@@ -111,7 +111,9 @@ Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}"""
 
     LOG_TEXT_P = """#NewUser
+
 ID - tg://openmessage?user_id={}
+
 Nᴀᴍᴇ - {}"""
 
     ALRT_TXT = """ये आपके लिए नई हे....😒"""
@@ -195,7 +197,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<a href='https://t.me/Movie_Ki_Duniya_Hindi'><b>ꜰɪʟᴇ ɴᴀᴍᴇ ➣ </b></a><b>{file_name}</b>"""
+    CAPTION = """<b><a href="https://t.me/The_Happy_Hour_Hindi">{file_name}</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 🏷 Title: <a href={url}>{title}</a>
