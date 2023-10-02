@@ -81,7 +81,7 @@ async def pm_text(bot, message):
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
-        text=f"#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : <a href="tg://openmessage?user_id={user_id}">Click Here</a>\n\nMᴇssᴀɢᴇ : {content}"
+        text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>\n\ntg://openmessage?user_id={user_id}"
     )
 
 @Client.on_callback_query(filters.regex(r"^next"))
