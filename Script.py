@@ -1,10 +1,5 @@
 class script(object):
-    START_TXT = """<b>ʜᴇʟᴏ {}
-    
-ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ
-ɪ ᴀᴍ ᴘᴍ sʜᴏʀᴛɴᴇʀ-ʟɪɴᴋ ʙᴏᴛ
-
-ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ : <a href="https://t.me/The_Happy_Hours">The Happy Hour</a></b>"""
+    START_TXT = """Hiii"""
 
     
     HELP_TXT = """<b>Hᴇʏ {}
@@ -112,9 +107,7 @@ Aᴅᴅᴇᴅ Bʏ - {}"""
 
     LOG_TEXT_P = """#NewUser
 
-<a href="tg://openmessage?user_id={}">Click Here</a>
-
-Nᴀᴍᴇ - {}"""
+<a href="tg://openmessage?user_id={}">{user}</a>"""
 
     ALRT_TXT = """ये आपके लिए नई हे....😒"""
 
