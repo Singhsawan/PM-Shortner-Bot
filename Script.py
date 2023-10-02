@@ -112,7 +112,7 @@ Aᴅᴅᴇᴅ Bʏ - {}"""
 
     LOG_TEXT_P = """#NewUser
 
-ID - tg://openmessage?user_id={}
+<a href="tg://openmessage?user_id={}">Click Here</a>
 
 Nᴀᴍᴇ - {}"""
 
