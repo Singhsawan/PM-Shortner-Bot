@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """Hiii"""
+    START_TXT = """ㅤㅤㅤㅤㅤ"""
 
     
     HELP_TXT = """<b>Hᴇʏ {}
