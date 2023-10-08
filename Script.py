@@ -193,11 +193,11 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
     CAPTION = """<b><a href="https://t.me/The_Happy_Hour_Hindi">{file_name}</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
-💿 Audio: हिंदी + English"""
+🍿 Title: <a href={url}>{title}</a>
+🎃 Genres: {genres}
+📅 Year: <a href={url}/releaseinfo>{year}</a>
+⭐ Rating: <a href={url}/ratings>{rating}</a> / 10
+🔉 Audio: हिंदी + English"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
