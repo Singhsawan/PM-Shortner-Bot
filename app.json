@@ -20,30 +20,37 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
+"value":"6488653342:AAHnho92aBq3gXs8eyKHwo_pzx5lL8MbjRY",
             "required": true
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
+"value":"24579842",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
+"value":"ec6105bf1a02c98f837300546dc341d1",
             "required": true
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+"value":"-1001867538832",
             "required": false
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
+"value":"1277771711 1991522624",
             "required": true
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
+"value":"https://telegra.ph/file/7c98ec193af3f012304e8.jpg",
             "required": false
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+"value":"-1001939252420",
             "required": true
         },
         "AUTH_USERS": {
@@ -52,14 +59,17 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+"value":"-1001821560097",
             "required": false
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+"value":"mongodb+srv://happythehour:skumar(2006)@cluster0.wttyshn.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+"value":"PMBOT",
             "required": false
         },
         "COLLECTION_NAME": {
@@ -75,7 +85,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "eco"
+            "size": "basic"
         }
     }
 }
