@@ -7,7 +7,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>
  🤖 ᴍʏ ɴᴀᴍᴇ : {}
- 👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Master_Jiraya_Bot'>🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮</a>
+ 👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Master_Jiraya'>🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮</a>
  📚 ʟɪʙʀᴀʀʏ : No library....
  📝 ʟᴀɴɢᴜᴀɢᴇ : ʜɪɴᴅɪ
  ♻️ ᴅᴀᴛᴀ ʙᴀsᴇ : ꜰʀᴇᴇ ᴠᴀʟᴀ 🤫
