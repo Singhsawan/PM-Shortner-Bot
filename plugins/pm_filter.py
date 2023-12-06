@@ -76,8 +76,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 🥱 \n\nअगर आपको मूवी चाइए तो ग्रुप का ᴜꜱᴇ करना होगा....\n\nपर्सनल में मूवी नई मिलेगा....😒\n\n\nAny Problem - @Master_Jiraya_Bot</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ 📝", url=f"https://t.me/Happy_Hour_Friends")]])
+         text=f"<b>ʜᴇʏ {user}\n\nIf you want a movie, you have to ᴜꜱᴇ of the group....\n\nYou will get new movie in personal...😒 \n\n\nAny Problem - @Ultraloot23</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ 📝", url=f"https://t.me/ultrasmoviegroup")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
