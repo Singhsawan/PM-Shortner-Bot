@@ -21,10 +21,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6150499184:AAH-fL4GOz0iNelPKl7OYeKtf86CgHJ
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/c25650fbfbd261327be1b.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/c25650fbfbd261327be1b.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/c25650fbfbd261327be1b.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/c25650fbfbd261327be1b.jpg")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/10992db8548b7574a4d75.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/10992db8548b7574a4d75.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/10992db8548b7574a4d75.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/10992db8548b7574a4d75.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1991522624').split()]
@@ -66,10 +66,10 @@ MSG_ALRT = environ.get('MSG_ALRT', '⚡')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001939252420'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ultrasmoviegroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "False")), False)
+IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
