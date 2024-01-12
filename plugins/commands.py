@@ -165,15 +165,14 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    InlineKeyboardMarkup(
+                    reply_markup=InlineKeyboardMarkup(
                         [
-                            [
-                                InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}')
-                            ]
+                         [
+                          InlineKeyboardButton("✨ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ✨", url="https://t.me/+4nzja42ELQwzOWVl")
+                         ]
                         ]
                     )
-                    )
-               )
+                )
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
