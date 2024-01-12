@@ -334,7 +334,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/The_Happy_Hours')
+                      InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/ultrasmoviegroup')
                    ]
                     ]
                 )
@@ -346,7 +346,7 @@ async def start(client, message):
     elif data.startswith("files"):
         user = message.from_user.id
         if temp.SHORT.get(user)==None:
-            await message.reply_text(text="<b>वो मैसेज बहुत पुराना था....🥱\nअपने लिए वापस मूवी का नाम लिखे....❤️\n\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗻 𝗶𝗻 𝗚𝗿𝗼𝘂𝗽</b>")
+            await message.reply_text(text="<b>That message was very old\n\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮i𝗻 𝗶𝗻 𝗚𝗿𝗼𝘂𝗽</b>")
         else:
             chat_id = temp.SHORT.get(user)
         settings = await get_settings(chat_id)
@@ -390,7 +390,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/The_Happy_Hours')
+                      InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴜᴘᴅᴀᴛᴇ', url=f'https://t.me/ultrasmoviegroup')
                    ]
                     ]
                 )
