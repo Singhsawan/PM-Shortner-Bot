@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24579842'))
-API_HASH = environ.get('API_HASH', 'ec6105bf1a02c98f837300546dc341d1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6150499184:AAH-fL4GOz0iNelPKl7OYeKtf86CgHJuDQg")
+API_ID = int(environ.get('API_ID', '28547341'))
+API_HASH = environ.get('API_HASH', 'ce7fff98400710f9b662b334ac4f4b36')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6953142067:AAFoICP_nQvw1ed1bgoM4CWXJ-BF0I9vY00")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -43,8 +43,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://spidy198:spidy@19837@cluster0.llhdgaf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "SPIDY")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://techwithmoneyme:kbTo0sH1dn7U7H8U@cluster0.o9whxnl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "techwithmoneyme")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -60,10 +60,10 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ultrasmoviegroup')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/umoviesearch')
-TUTORIAL = environ.get('TUTORIAL', 'http://successive-amberly-ultraloot.koyeb.app/122641/VIDEO_fccd8285-2e04-4e50-9403-64226958a590.mp4?hash=AgADAQ')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MOVIESHD_tutorial/53')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', '⚡')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001939252420'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100162988022'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ultrasmoviegroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
