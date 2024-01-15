@@ -1,12 +1,9 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.11
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /Pm-Shortner
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /ben-url-filter-bot
-WORKDIR /ben-url-filter-bot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+COPY . /Pm-Shortner
+
+RUN pip install -r requirements.txt
+
+CMD ["python", "bot.py"]
