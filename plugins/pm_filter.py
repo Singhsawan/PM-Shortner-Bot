@@ -2262,11 +2262,7 @@ async def auto_filter(client, msg, spoll=False):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
-                # cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
-            cap = f"<b>Hᴇʏ {message.from_user.mention}, Fᴏᴜɴᴅ {total} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
-            cap+="<b><u>📚 Requested Files 👇</u></b>\n\n"
-            for file in files:
-                cap += f"<b>💠 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"if settings['auto_delete']:
+                if settings['auto_delete']:
                     await asyncio.sleep(300)
                     await hehe.delete()
                     await message.delete()
@@ -2321,7 +2317,7 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
     # if spoll:
     #     await msg.message.delete()
-
+    
 
 async def advantage_spell_chok(client, msg):
     mv_id = msg.id
