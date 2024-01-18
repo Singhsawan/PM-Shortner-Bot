@@ -419,74 +419,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     await query.answer()
     
 
-    try:
-        if settings['auto_delete']:
-            btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-                ]
-            )
 
-        else:
-            btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-                ]
-            )
-                
-    except KeyError:
-        await save_group_settings(query.message.chat.id, 'auto_delete', True)
-        btn.insert(0, 
-            [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ",  callback_data=f"seasons#{key}")
-            ]
-        )
-
-    # btn.insert(0, [
-    #     InlineKeyboardButton("Hᴏᴡ ᴛᴏ Dᴏᴡɴʟᴏᴀᴅ⚡", url=await get_tutorial(query.message.chat.id))
-    # ])
-    if offset != "":
-        try:
-            if settings['max_btn']:
-                btn.append(
-                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
-                )
-    
-            else:
-                btn.append(
-                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
-                )
-        except KeyError:
-            await save_group_settings(query.message.chat.id, 'max_btn', True)
-            btn.append(
-                [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
-            )
-    else:
-        btn.append(
-            [InlineKeyboardButton(text="😶 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ 😶",callback_data="pages")]
-        )
-    # if ENABLE_SHORTLINK == True:
-    btn.insert(0, [
-        InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-    ])
-    # else:
-    #     btn.insert(0, [
-    #         InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-    #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{key}#{offset}")
-    #     ])
-    try:
-        await query.edit_message_reply_markup(
-            reply_markup=InlineKeyboardMarkup(btn)
-        )
-    except MessageNotModified:
-        pass
-    await query.answer()
     # if lang != "homepage":
     #     offset = 0
         
