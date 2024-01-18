@@ -2253,7 +2253,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings["button"]:
             cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
         else:
-        btn = []
+            btn = []
         btn.insert(0, 
             [
                 InlineKeyboardButton("‼️ Cʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}"),
@@ -2269,8 +2269,8 @@ async def auto_filter(client, msg, spoll=False):
     btn.append([
     InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{offset}")
     ])
-    
-    
+
+
     if not settings["button"]:
         curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -2288,6 +2288,7 @@ async def auto_filter(client, msg, spoll=False):
         except MessageNotModified:
             pass
     await query.answer()
+        
 
     if imdb and imdb.get('poster'):
         try:
