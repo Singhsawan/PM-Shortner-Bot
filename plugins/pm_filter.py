@@ -370,7 +370,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     #     await save_group_settings(message.chat.id, 'is_shortlink', False)
     #     ENABLE_SHORTLINK = False
     pre = 'filep' if settings['file_secure'] else 'file'
-            else:
+            
                 btn.append(
                     [
                         InlineKeyboardButton("⇚ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
