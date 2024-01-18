@@ -371,13 +371,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     #     ENABLE_SHORTLINK = False
     pre = 'filep' if settings['file_secure'] else 'file'
             
-                btn.append(
-                    [
-                        InlineKeyboardButton("⇚ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                        InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"),
-                        InlineKeyboardButton("ɴᴇxᴛ ⇛", callback_data=f"next_{req}_{key}_{n_offset}")
-                    ],
-                )
+                
     if settings["button"]:
         btn = [
             [
@@ -388,7 +382,23 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     else:
-        # cap = f"<b>Hᴇʏ {query.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
+        btn = []
+        btn.insert(0, 
+            [
+                InlineKeyboardButton("‼️ Cʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}"),
+            ]
+        )
+
+    offset = 0
+
+    btn.append([
+    InlineKeyboardButton("🥶 Cʜᴏᴏsᴇ Sᴇᴀsᴏɴ ᴀɢᴀɪɴ 🥶", callback_data=f"seasons#{key}")
+
+    ])
+    btn.append([
+    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{offset}")
+    ])
+      # cap = f"<b>Hᴇʏ {query.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
         cap = f"<b>Hᴇʏ {query.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
         for file in files:
             cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
