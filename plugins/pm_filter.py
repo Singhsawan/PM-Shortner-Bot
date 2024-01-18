@@ -420,7 +420,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 
     ])
     btn.append([
-    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{off_set}")
+    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{offset}")
     ])
     
     
@@ -600,7 +600,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
 
     ])
     btn.append([
-    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{off_set}")
+    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{offset}")
     ])
     
     
@@ -734,7 +734,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
 
     ])
     btn.append([
-    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{off_set}")
+    InlineKeyboardButton("🔺 ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs 🔻", callback_data=f"next_{req}_{key}_{offset}")
     ])
     
     
